@@ -1,0 +1,34 @@
+//Program to find no. of vehicles
+package myPackage;
+import java.util.Scanner;
+
+public class Tyres {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int v = sc.nextInt();
+		int w = sc.nextInt();
+		if(w < 2 || w % 2 != 0 || w <= v) {
+			System.out.println("INVALID INPUT");
+			return;
+		}
+		int fw = (w - 2 * v) / 2;
+		int tw = v - fw;
+		System.out.println(tw + " " + fw);
+	}
+}
+
+//Supermarket Program
+package myPackage;
+
+public class SuperMarket {
+
+	public static void main(String[] args) {
+		String str = new java.util.Scanner(System.in).next();
+		long res = 1;
+		int len = str.length();
+		for(int i = 0; i < len; i++)
+			res *= Character.getNumericValue(str.charAt(i));
+		System.out.println(res);
+	}
+
+}
